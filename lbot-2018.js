@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
           img.src = 'https://goo.gl/Z1raqp';
           robot.chatHistory.push(img);
           robot.render();
-        }]
+        }],
 	['召喚峽谷', function() {
           img.src = 'https://goo.gl/68wMM8';
           robot.chatHistory.push(img);
