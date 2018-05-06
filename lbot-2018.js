@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
   
-/* 
+ 
   SaihuBot.prototype.responses.push(
-    { name: 'map1', rule: /地圖/i, action: function(robot, msg) {
+    { name: 'pt', rule: /元素週期表 | element/i, action: function(robot, msg) {
       var img = document.createElement('img');
-      img.src = '';
+      img.src = 'https://goo.gl/uH4atu';
       robot.chatHistory.push(img);
       robot.render();
     }});
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       robot.chatHistory.push(img);
       robot.render();
     }});
-*/
+
 	
 	
   LBot.prototype.responses.push(
@@ -77,38 +77,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }});
 
 	
-/*
-  SaihuBot.prototype.responses.push(
+/* 測試中
+  LBot.prototype.responses.push(
     { name: 'go', rule: /首頁|home*|議程*|schedule/i, action: function(robot, msg) {
       robot.confirm('前往 Coscup 網站', ['前往網站', function() {
-          robot.send('開啟 Coscup 網站 http://coscup.org/2016/schedules.html');
+          robot.send('開啟 Coscup 網站 http://.html');
           robot.render();
-          window.location = 'http://coscup.org/2016/schedules.html';
+          window.location = 'http://.html';
         }]
       );
     }});       
-
-
-  SaihuBot.prototype.responses.push(
-    { name: 'go', rule: /贊助*|sponsor/i, action: function(robot, msg) {
-      robot.confirm('前往 Coscup 贊助連結', ['前往網站', function() {
-          robot.send('開啟 Coscup 贊助連結 http://coscup.org/2016/sponsors.html');
-          robot.render();
-          window.location = 'http://coscup.org/2016/sponsors.html';
-        }]
-      );
-    }});
-
-	
-  SaihuBot.prototype.responses.push(
-    { name: 'stand', rule: /攤位*|stand/i, action: function(robot, msg) {
-      robot.confirm('stand', ['顯示攤位資訊', function() {
-          robot.send('顯示攤位資訊 http://blog.coscup.org/2016/08/coscup-2016.html');
-          robot.render();
-          window.location = 'http://blog.coscup.org/2016/08/coscup-2016.html';
-        }]
-      );
-    }});
 */
 
 
