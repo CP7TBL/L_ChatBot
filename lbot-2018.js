@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	
 	
-/*	
-  SaihuBot.prototype.responses.push(
+	
+  LBot.prototype.responses.push(
     { name: 'map', rule: /地圖*|map/i, action: function(robot, msg) {
       var img = document.createElement('img');
       robot.confirm('請問你想看哪個地圖?',
-        ['* 人文館', function() {
-          img.src = 'http://i.imgur.com/yOoxARF.png';
+        ['台灣', function() {
+          img.src = 'https://goo.gl/MqKYEZ';
           robot.chatHistory.push(img);
           robot.render();
         }],
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }]
       );
     }});
-*/
+
 	
 /*
   SaihuBot.prototype.responses.push(
