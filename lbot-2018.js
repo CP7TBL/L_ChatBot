@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
  
-  SaihuBot.prototype.responses.push(
+  LBot.prototype.responses.push(
     { name: 'pt', rule: /元素週期表 | element/i, action: function(robot, msg) {
       var img = document.createElement('img');
       img.src = 'https://goo.gl/uH4atu';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
       robot.render();
     }});
 	
-  SaihuBot.prototype.responses.push(
+  LBot.prototype.responses.push(
     { name: 'map2', rule: /活動/i, action: function(robot, msg) {
       var img = document.createElement('img');
       img.src = 'http://i.imgur.com/zfiQt0o.png';
