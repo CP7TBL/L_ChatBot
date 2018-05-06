@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
   LBot.prototype.responses.push(
     { name: 'question', rule: /錯誤回報*/i, action: function(robot, msg) {
       robot.confirm('什麼樣的問題?',
-        ['* The L 有哪裡 錯誤或建議', function() {
+        ['如果 The L 有哪裡 錯誤或建議 請點此連結告知 感謝', function() {
           robot.send('請將錯誤或建議回報到 https://goo.gl/9qxHWb');
           robot.render();
           window.location = 'https://goo.gl/9qxHWb';
