@@ -54,27 +54,20 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	
 	
-  LBot.prototype.responses.push(
+ LBot.prototype.responses.push(
     { name: 'map', rule: /地圖*|map/i, action: function(robot, msg) {
       var img = document.createElement('img');
       robot.confirm('請問你想看哪個地圖?',
-        ['台灣', function() {
+        ['臺灣', function() {
           img.src = 'https://goo.gl/MqKYEZ';
           robot.chatHistory.push(img);
           robot.render();
         }],
-		    
         ['中國大陸', function() {
           img.src = 'https://goo.gl/Z1raqp';
           robot.chatHistory.push(img);
           robot.render();
-        }],
-		    
-	 ['召喚峽谷', function() {
-          img.src = 'https://goo.gl/68wMM8';
-          robot.chatHistory.push(img);
-          robot.render();
-        }]	    
+        }]
       );
     }});
 
