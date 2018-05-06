@@ -23,21 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
   
  
  LBot.prototype.responses.push(
-    { name: 'pt', rule: /元素週期表/i, action: function(robot, msg) {
+    { name: 'pt', rule: /元素 | 週期表/i, action: function(robot, msg) {
       var img = document.createElement('img');
       img.src = 'https://goo.gl/uH4atu';
       robot.chatHistory.push(img);
       robot.render();
     }});
-/*	
+	
   LBot.prototype.responses.push(
-    { name: 'map2', rule: /活動/i, action: function(robot, msg) {
+    { name: 'tpmrt', rule: /捷運/i, action: function(robot, msg) {
       var img = document.createElement('img');
-      img.src = 'http://i.imgur.com/zfiQt0o.png';
+      img.src = 'https://goo.gl/izHMzW';
       robot.chatHistory.push(img);
       robot.render();
     }});
-*/
+
 	
 	
   LBot.prototype.responses.push(
