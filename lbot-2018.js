@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
   
- 
+ /*
   LBot.prototype.responses.push(
     { name: 'pt', rule: /元素週期表 | element/i, action: function(robot, msg) {
       var img = document.createElement('img');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       robot.chatHistory.push(img);
       robot.render();
     }});
-
+*/
 	
 	
   LBot.prototype.responses.push(
