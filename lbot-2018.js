@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
           robot.chatHistory.push(img);
           robot.render();
         }],
-        ['* 活動中心', function() {
-          img.src = 'http://i.imgur.com/zfiQt0o.png';
+        ['中國大陸', function() {
+          img.src = 'https://goo.gl/Z1raqp';
           robot.chatHistory.push(img);
           robot.render();
         }]
