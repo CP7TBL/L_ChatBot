@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	
  LBot.prototype.responses.push(
-    { name: 'map', rule: /地圖*|map/i, action: function(robot, msg) {
+    { name: 'map', rule: /地圖*/i, action: function(robot, msg) {
       var img = document.createElement('img');
       robot.confirm('請問你想看哪個地圖?',
         ['臺灣', function() {
