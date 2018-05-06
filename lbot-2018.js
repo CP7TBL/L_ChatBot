@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
  
-  LBot.prototype.responses.push(
-    { name: 'pt', rule: /元素週期表 | element/i, action: function(robot, msg) {
+ LBot.prototype.responses.push(
+    { name: 'pt', rule: /元素/i, action: function(robot, msg) {
       var img = document.createElement('img');
       img.src = 'https://goo.gl/uH4atu';
       robot.chatHistory.push(img);
